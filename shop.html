@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Leaf | Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nature Leaf</h1>
+        <nav class="navbar">
+            <a href="login.html">Login</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <h2>Explore Our Plants</h2>
+        <p>Choose from a variety of plants to bring nature into your home.</p>
+
+        <div class="shop-products">
+            <!-- Plant 1 -->
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/750/900/xif0q/plant-sapling/y/7/l/perennial-yes-yes-chinese-banyan-chinese-gem-money-ficus-original-imaggcb699ckrptr.jpeg?q=20&crop=false" alt="Ficus Plant">
+                <h3>Ficus Plant</h3>
+                <p>Price: $25</p>
+                <button onclick="addToCart('Ficus Plant', 25)">Add to Cart</button>
+            </div>
+
+            <!-- Plant 2 -->
+            <div class="product">
+                <img src="https://cdn.mos.cms.futurecdn.net/pNug7bBksRVsL54EEE5Wu9.jpg" alt="Snake Plant">
+                <h3>Snake Plant</h3>
+                <p>Price: $20</p>
+                <button onclick="addToCart('Snake Plant', 20)">Add to Cart</button>
+            </div>
+
+            <!-- Plant 3 -->
+            <div class="product">
+                <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/KLII6TFQNQI6ZHN5BVDATVCMDQ.jpg&w=1200" alt="Aloe Vera">
+                <h3>Aloe Vera</h3>
+                <p>Price: $15</p>
+                <button onclick="addToCart('Aloe Vera', 15)">Add to Cart</button>
+            </div>
+
+            <!-- Plant 4 -->
+            <div class="product">
+                <img src="https://images.squarespace-cdn.com/content/v1/56923fa6a976af0bfc533475/4487beac-be01-4ad5-8133-3276fb81972b/IMG_7938.jpg" alt="Monstera">
+                <h3>Monstera</h3>
+                <p>Price: $30</p>
+                <button onclick="addToCart('Monstera', 30)">Add to Cart</button>
+            </div>
+
+            <!-- Plant 5 -->
+            <div class="product">
+                <img src="https://getblooms.com/cdn/shop/articles/Pothos_Plant_Care_The_Easiest_Trailing_Houseplant.webp?v=1701182365" alt="Pothos Plant">
+                <h3>Pothos Plant</h3>
+                <p>Price: $18</p>
+                <button onclick="addToCart('Pothos Plant', 18)">Add to Cart</button>
+            </div>
+
+            <!-- Plant 6 -->
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51TV6W-ETmL._AC_UF1000,1000_QL80_.jpg" alt="Peace Lily">
+                <h3>Peace Lily</h3>
+                <p>Price: $22</p>
+                <button onclick="addToCart('Peace Lily', 22)">Add to Cart</button>
+            </div>
+
+            <!-- Additional Plants -->
+            <div class="product">
+                <img src="https://i0.wp.com/plantzone.in/wp-content/uploads/2024/08/Cactus-Plant.jpg?ssl=1" alt="Cactus Plant">
+                <h3>Cactus Plant</h3>
+                <p>Price: $12</p>
+                <button onclick="addToCart('Cactus Plant', 12)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81euKzQpXjL.jpg" alt="Lavender Plant">
+                <h3>Lavender</h3>
+                <p>Price: $20</p>
+                <button onclick="addToCart('Lavender', 20)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://unlimitedgreens.com/cdn/shop/files/IMG_4861_768x960_fef97dca-d6a6-4ea7-b708-f996952d60d2.jpg?v=1686312519" alt="Bamboo Plant">
+                <h3>Bamboo Plant</h3>
+                <p>Price: $35</p>
+                <button onclick="addToCart('Bamboo Plant', 35)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvxzDFf8ph-cT8SDvYpxAReitdGvxh1oAmQ&s" alt="Orchid Plant">
+                <h3>Orchid</h3>
+                <p>Price: $40</p>
+                <button onclick="addToCart('Orchid', 40)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cart Summary -->
+    <section class="cart-summary">
+        <h3>Your Cart</h3>
+        <p>Items in your cart will appear here. Make sure to check out soon!</p>
+        <button onclick="viewCart()">View Cart</button>
+    </section>
+
+    <footer id="contact">
+        <p>© 2024 Nature Leaf. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@natureleaf.com">info@natureleaf.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

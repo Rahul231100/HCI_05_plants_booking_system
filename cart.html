@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Leaf | Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nature Leaf</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+
+        <!-- Delivery Address Form -->
+        <h4>Enter Delivery Address:</h4>
+        <form id="address-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <button type="button" onclick="checkout()">Checkout</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Nature Leaf. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nature Leaf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nature Leaf</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a> <!-- Link to the register page -->
+        </nav>
+    </header>
+
+    <section class="login-section">
+        <h2>Login to Your Account</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <a href="forget.html">forget password</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Nature Leaf. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@natureleaf.com">info@natureleaf.com</a></p>
+    </footer>
+
+    <script>
+        // Login form event listener
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value.trim();
+
+            // Save login state to localStorage
+            localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("username", username);
+
+            // Redirect to home page
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

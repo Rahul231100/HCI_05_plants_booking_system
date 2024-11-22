@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Leaf | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nature Leaf</h1>
+        <nav class="navbar">
+            <a href="login.html">Login</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">cart</a>
+        </nav>
+    </header>
+    
+    <!-- Advertising Slider -->
+    <div class="slider">
+        <div class="slide fade">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-houseplant-collection_23-2148910610.jpg" alt="Beautiful Indoor Plant">
+            <div class="caption">Brighten Your Home with Indoor Plants</div>
+        </div>
+        <div class="slide fade">
+            <img src="plant2.jpg" alt="Succulent Plant">
+            <div class="caption">Low Maintenance Succulents</div>
+        </div>
+        <div class="slide fade">
+            <img src="plant3.jpg" alt="Flowering Plants">
+            <div class="caption">Add Color to Your Garden with Flowering Plants</div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Nature Leaf</h2>
+        <p>Transform your space with nature's beauty.</p>
+        <button onclick="showMessage()">Shop Now</button>
+    </section>
+    
+    <!-- Featured Products Section -->
+    <section class="product-list">
+        <h3>Our Featured Categories</h3>
+        <div class="product">
+            <img src="https://nurserylive.com/cdn/shop/collections/nurserylive-flowering-plants-category-image-505581.jpg?v=1681381493" alt="Flowering Plant">
+            <button onclick="showProductDetails('flowering')">Flowering Plants</button>
+        </div>
+        <div class="product">
+            <img src="https://www.plantvault.com/cdn/shop/articles/A_house_and_office_filled_with_low_light_plants_such_as_ZZ_plant_Snake_plant_Hanging_pothos_and_more.webp?v=1724869883" alt="Indoor Plant">
+            <button onclick="showProductDetails('indoor')">Indoor Plants</button>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/jz4g3gw0/plant-seed/v/k/c/35-succulent-gift-7-vidishas-horticulture-original-imafj7c8mautn3wt.jpeg?q=90&crop=false" alt="Succulent Plant">
+            <button onclick="showProductDetails('succulent')">Succulents</button>
+        </div>
+    </section>
+    
+    <!-- Product Details Section -->
+    <section id="product-details">
+        <!-- Product details will be dynamically inserted here -->
+    </section>
+
+    <footer id="contact">
+        <p>© 2024 Nature Leaf. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@natureleaf.com">info@natureleaf.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
